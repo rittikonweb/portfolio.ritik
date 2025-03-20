@@ -92,7 +92,7 @@ ul li a:hover {
     color : #27477d;
     border : 2px solid #27477d;
     cursor : pointer;
-    border-radius: 20px;
+    border-radius: 6px;
 }
 .box {
     position : absolute;
