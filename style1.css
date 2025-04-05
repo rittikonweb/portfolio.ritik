@@ -162,7 +162,7 @@ ul li a:hover {
 }
 .card { 
     font-family: Georgia, 'Times New Roman', Times, serif;
-    height : 350px;
+    height : 360px;
     width : 250px;
     padding : 20px 35px;
     border-radius : 20px;
@@ -218,7 +218,7 @@ ul li a:hover {
 }
 .contact h1 {
     color: #27477d;
-    font-size: 55px;
+    font-size : 55px;
     position :relative;
     margin-left : 4%;
 }
@@ -252,7 +252,7 @@ ul li a:hover {
     display : block;
     width : 291px;
     height : 360px;
-    margin : 30px;
+    margin : 25px;
 }
 .layer {
     width : 282px;
