@@ -61,7 +61,7 @@ ul li a:hover {
     font-weight: 600;
     font-size : 19px;
     color : #27477d;
-    line-height : 28px;
+    line-height : 30px;
     letter-spacing : 1px;
 }
 .info h2 {
@@ -163,7 +163,7 @@ ul li a:hover {
 .card { 
     font-family: Georgia, 'Times New Roman', Times, serif;
     height : 360px;
-    width : 250px;
+    width : 260px;
     padding : 20px 35px;
     border-radius : 20px;
     margin : 25px;
