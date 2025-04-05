@@ -38,7 +38,7 @@ ul li {
     justify-content: space-between;
 }
 ul li a {
-    letter-spacing: 1px;
+    letter-spacing : 1px;
     color : white;
     text-decoration: none;
 }
@@ -47,8 +47,8 @@ ul li a:hover {
     text-decoration: underline;
 }
 .info {
-    margin-top: 6%;
-    margin-left: 5%;
+    margin-topn : 6%;
+    margin-left : 5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .info h1 {
@@ -61,11 +61,11 @@ ul li a:hover {
     font-weight: 600;
     font-size : 19px;
     color : #27477d;
-    line-height: 28px;
-    letter-spacing: 1px;
+    line-height : 28px;
+    letter-spacing : 1px;
 }
 .info h2 {
-    letter-spacing: 1px;
+    letter-spacing : 1px;
     font-size : 27px;
     color : #27477d;
 }
@@ -73,15 +73,15 @@ ul li a:hover {
     color : #27477d;
 }
 .info a {
-    margin-right: 12px;
+    margin-right : 12px;
     font-weight: 400;
     text-decoration: none;
     color : #ffff;
     background-color: #27477d;
     border : 2px solid transparent;
     padding : 10px 22px;
-    border-radius: 6px;
-    transition: .4s ease;
+    border-radius : 6px;
+    transition : .4s ease;
 }
 .info a:hover {
     cursor : pointer;
@@ -92,7 +92,7 @@ ul li a:hover {
     color : #27477d;
     border : 2px solid #27477d;
     cursor : pointer;
-    border-radius: 6px;
+    border-radius : 6px;
 }
 .box {
     position : absolute;
@@ -134,7 +134,7 @@ ul li a:hover {
 }
 
 .about p {
-    font-size: 19px;
+    font-size : 19px;
     font-weight : 600;
     letter-spacing: 2px;
     color : #27477d;
@@ -163,7 +163,7 @@ ul li a:hover {
 .card { 
     font-family: Georgia, 'Times New Roman', Times, serif;
     height : 350px;
-    width : 270px;
+    width : 250px;
     padding : 20px 35px;
     border-radius : 20px;
     margin : 25px;
@@ -171,14 +171,14 @@ ul li a:hover {
     text-align : center;
     background-color: white;
     border : 1px solid transparent;
-    box-shadow: 6px 6px 12px black;
+    box-shadow : 6px 6px 12px black;
     transition : transform 0.5s;
 }
 .card:hover {
     transform : scale(1.05);
 }
 .card i {
-    font-size: 60px;
+    font-size : 60px;
     color: #27477d;
     
 }
