@@ -183,7 +183,7 @@ ul li a:hover {
     
 }
 .card h4 {
-    margin-top : 25px;
+    margin-top : 20px;
     color : #27477d;
     font-size : 30px;
     margin-bottom : 15px;
@@ -193,7 +193,7 @@ ul li a:hover {
     font-size : 16px;
     font-weight : 550;
     margin-bottom : 25px;
-    line-height : 27px;
+    line-height : 18px;
     letter-spacing: 1px;
 }
 .card .button {
