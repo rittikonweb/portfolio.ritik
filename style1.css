@@ -63,7 +63,7 @@ ul li a:hover {
     margin-top : 5px;
     margin-bottom : 5px;
     font-size : 65px;
-    color : rgb(12, 12, 12);
+    color : #27477d;
 }
 .info p {
     font-weight: 600;
@@ -78,7 +78,7 @@ ul li a:hover {
     color : #27477d;
 }
 .info span {
-    color : #27477d;
+    color : #000;
 }
 .info a {
     margin-right : 12px;
