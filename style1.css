@@ -59,12 +59,59 @@ ul li a:hover {
     margin-left : 5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.info h1 {
-    margin-top : 5px;
-    margin-bottom : 5px;
-    font-size : 65px;
-    color : #27477d;
+
+.animation {
+  display: inline-block;
+  position: relative;
+  width: 20ch; /* Adjust width to fit the words */
+  height: 1em;
+  vertical-align: bottom;
+  overflow: hidden;
 }
+    
+.animation .word {
+  color : #ffb347;  
+  position: absolute;
+  left: 0;
+  top: -9px;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: wordSwitch 4s infinite;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.animation .word-1 {
+  animation-delay: 0s;
+}
+
+.animation .word-2 {
+  animation-delay: 2s;
+}
+
+@keyframes wordSwitch {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+    
 .info p {
     font-weight: 600;
     font-size : 19px;
@@ -72,14 +119,13 @@ ul li a:hover {
     line-height : 30px;
     letter-spacing : 1px;
 }
+    
 .info h2 {
     letter-spacing : 1px;
     font-size : 27px;
     color : #27477d;
 }
-.info span {
-    color : #000;
-}
+
 .info a {
     margin-right : 12px;
     font-weight: 400;
@@ -91,9 +137,11 @@ ul li a:hover {
     border-radius : 6px;
     transition : .4s ease;
 }
+    
 .info a:hover {
     cursor : pointer;
 }
+    
 .info a:active {
     font-weight: 400;
     background-color: white;
@@ -102,6 +150,7 @@ ul li a:hover {
     cursor : pointer;
     border-radius : 6px;
 }
+    
 .box {
     position : absolute;
     height :400px;
@@ -113,6 +162,7 @@ ul li a:hover {
     background-color: white;
     transition : transform 0.5s;
 }
+    
 .box h3,h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color : #27477d;
