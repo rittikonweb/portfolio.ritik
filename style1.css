@@ -166,13 +166,13 @@ ul li a:hover {
     margin-top: -247px;
     border-radius: 7px;
     box-shadow : 6px 6px 12px black;
-    background-color: white;
+    background-color: #27477d;
     transition : transform 0.5s;
 }
     
 .box h3,h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color : #27477d;
+    color : #fff;
     padding : 10px 0 0 5px;
 
 }
