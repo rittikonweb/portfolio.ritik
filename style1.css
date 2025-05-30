@@ -60,6 +60,13 @@ ul li a:hover {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.info h1 {
+    margin-top : 5px;
+    margin-bottom : 5px;
+    font-size : 65px;
+    color : #27477d
+}
+    
 .animation {
   display: inline-block;
   position: relative;
