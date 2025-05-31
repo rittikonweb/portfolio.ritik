@@ -245,15 +245,16 @@ ul li a:hover {
 }
 .card i {
     font-size : 60px;
-    color: #27477d;
-    
+    color: #ff865b;
 }
+    
 .card h4 {
     margin-top : 20px;
     color : #27477d;
     font-size : 30px;
     margin-bottom : 15px;
 }
+    
 .para p {
     color : #27477d;
     font-size : 16px;
@@ -262,6 +263,7 @@ ul li a:hover {
     line-height : 18px;
     letter-spacing: 1px;
 }
+    
 .card .button {
     padding : 9px 22px;
     background-color: #27477d;
@@ -274,24 +276,29 @@ ul li a:hover {
     letter-spacing: 1px;
     transition : .2s ease;
 }
+    
 .card .button:active {
     background-color: white;
     color : #27477d;
     border : 2px solid #27477d;
 }
+    
 .contact {
     margin-top : 105px;
 }
+    
 .contact h1 {
     color: #27477d;
     font-size : 55px;
     position :relative;
     margin-left : 4%;
 }
+    
 #work {
     margin-top : 5px;
     margin-bottom : 170px;
 }
+    
 .work-list {
     display : flex;
     align-items: center;
@@ -307,12 +314,14 @@ ul li a:hover {
     margin-right : auto;
     text-align : center;
 }
+    
 .work {
     border-radius : 10px;
     position : relative;
     overflow : hidden;
     transition : transform 0.4s; 
 }
+    
 .work img {
     border-radius : 10px;
     display : block;
@@ -320,6 +329,7 @@ ul li a:hover {
     height : 360px;
     margin : 25px;
 }
+    
 .layer {
     width : 282px;
     height : 360px;
@@ -338,18 +348,21 @@ ul li a:hover {
     margin : 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+    
 .layer h3 {
     color : #E8F0FE;
     font-weight : 600;
     margin-bottom : 20px;
     font-size : 23px;
 }
+    
 .layer p {
     color : #E8F0FE;
     font-size : 16px;
     font-weight: 550;
     letter-spacing: .6px;
 }
+    
 .btn {
     position : absolute;
     margin-top : 20px;
@@ -364,6 +377,7 @@ ul li a:hover {
     border-radius: 6px;
     transition : .2s ease;
 }
+    
 .btn:active {
     background-color: white;
     color : #27477d;
@@ -373,35 +387,41 @@ ul li a:hover {
 .work:hover {
     transform : scale(1.05);
 }
+    
 #contact {
     margin-top : 100px;
 }
+    
 .contact-left {
     margin-left : 5%;
     flex-basis : 35%;
 }
+    
 .contact-right {
     flex-basis : 60%;
 }
+    
 .row {
     display : flex;
     justify-content: space-between;
 }
+    
 .contact-left h1 {
     
     font-size : 55px;
     color : #27477d;
 }
+    
 .contact-left p {
     margin-top : 20px;
-    
     font-size: 20px;
     color : #27477d;
 }
-.social-icons {
     
+.social-icons {
     margin-top : 20px;
 }
+    
 .social-icons a {
     margin-right : 15px;
     font-size : 30px;
@@ -409,12 +429,15 @@ ul li a:hover {
     color : #27477d;
     transition : 0.5s ease;
 }
+    
 .social-icons a:active {
     color : gray;
 }
+    
 .contact-right form {
     width : 100%;
 }
+    
 form input, form textarea {
     width : 80%;
     border : 0;
@@ -425,6 +448,7 @@ form input, form textarea {
     font-size: 18px;
     border-radius: 6px;
 }
+    
 form button {
     margin-top : 30px;
     margin-right : 20px;
@@ -440,11 +464,13 @@ form button {
     transition : .2s ease;
     cursor : pointer; 
 }
+    
 form button:active {
     background : #fff;
     color : #27477d;
     border : 2px solid #27477d;
 }
+    
 .copyright {
     width : 100%;
     padding : 25px 0;
