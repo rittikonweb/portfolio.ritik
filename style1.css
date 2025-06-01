@@ -45,15 +45,91 @@ ul li {
     padding : 10px 14px;
     justify-content: space-between;
 }
+    
 ul li a {
     letter-spacing : 1px;
     color : white;
     text-decoration: none;
 }
+    
 ul li a:hover {
     font-weight: bold;
     text-decoration: underline;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff865b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.dropdown-content li {
+    display: block;
+    padding: 0;
+}
+
+.dropdown-content li a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+}
+
+.dropdown-content li a:hover {
+    background-color: #6ea8fe;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#loader {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.8);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dual-ring {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+}
+.dual-ring:after {
+  content: " ";
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 6px solid #27477d;
+  border-color: #27477d transparent #6ea8fe transparent;
+  animation: dual-ring-spin 0.5s linear infinite;
+}
+@keyframes dual-ring-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+    
 .info {
     margin-top : 175px;
     margin-left : 5%;
