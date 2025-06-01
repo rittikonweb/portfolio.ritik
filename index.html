@@ -16,13 +16,26 @@
         <div class="nav">
             <h1>Ritik's Portfolio</h1>
             <ul>
-                <li><a href="#home">HOME</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">HOME</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#work">MY WORK</a></li>
                 <li><a href="#services">SERVICES</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
+
+        <div id="loader" style="display:none;">
+            <div class="dual-ring"></div>
+        </div>
+            
         </header>
     </section>   
     
@@ -172,8 +185,37 @@
 
         </div>
     </section>
-    
-    
+       
 </div>
+
+<script>
+  // Loader animation for dropdown menu
+  document.querySelectorAll('.dropdown-content a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = this.getAttribute('href');
+      // Show loader
+      document.getElementById('loader').style.display = 'flex';
+      // Hide dropdown
+      this.closest('.dropdown-content').style.display = 'none';
+      // After 1s, hide loader and scroll to section
+      setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+        if (target && document.querySelector(target)) {
+          document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 1000);
+    });
+  });
+
+  // Optional: Show dropdown again on hover
+  document.querySelector('.dropdown').addEventListener('mouseenter', function() {
+    this.querySelector('.dropdown-content').style.display = 'block';
+  });
+  document.querySelector('.dropdown').addEventListener('mouseleave', function() {
+    this.querySelector('.dropdown-content').style.display = 'none';
+  });
+</script>
+    
 </body>
 </html>
