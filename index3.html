@@ -564,5 +564,42 @@ document.addEventListener('DOMContentLoaded', function() {
     slideTo(0);
 });
 </script>
+
+<script>
+document.querySelectorAll('#navbar ul li a').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    
+    var bar = document.querySelector('#loader .bar');
+    bar.style.width = '0';
+    void bar.offsetWidth; 
+    document.getElementById('loader').style.display = 'flex';
+    bar.style.animation = 'bar-move 0.5s cubic-bezier(.77,0,.18,1) forwards';
+
+    
+    var dropdown = this.closest('.dropdown-content');
+    if (dropdown) dropdown.style.display = 'none';
+
+    
+    var target = this.getAttribute('href');
+    if (target && target.startsWith('#')) {
+      e.preventDefault();
+      setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+        if (document.querySelector(target)) {
+          document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
+    }
+   
+    else {
+      e.preventDefault();
+      setTimeout(() => {
+        window.location.href = target;
+      }, 500);
+    }
+  });
+});
+</script>
+
 </body>
 </html>
